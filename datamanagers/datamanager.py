@@ -65,7 +65,7 @@ class Dataset:
     def st_dev(self):
         avg = self.mean()
         deviations = [((x - avg) ** 2) for x in self.values]
-        return ((sum(deviations) / (len(self.values) - 1)) ** (1 / 2))
+        return ((sum(deviations) / (len(self.values))) ** (1 / 2))
 
     def st_dev_plot(self):
         results = [(x - self.mean()) for x in self.values]
@@ -82,11 +82,8 @@ class Dataset:
 
 
 if __name__ != "__main__":
-    print(('''
------------------------------------------------------------------------------------------
+    print(('''-----------------------------------------------------------------------------------------
 Imported dataset manager v.0.01, tool to manage dataset and perform calculations over it.
 For more information see helper file in the installation folder.
 Copyright Nicola Moro, 2019.
------------------------------------------------------------------------------------------
-
-'''))
+-----------------------------------------------------------------------------------------'''))

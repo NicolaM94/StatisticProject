@@ -50,5 +50,4 @@ class SimpleRegression:
         plt.title("Regression line plot")
         plt.ylabel("Regression results")
         plt.xlabel("Dataset values")
-        plt.legend()
         plt.show()
