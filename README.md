@@ -19,9 +19,10 @@ Let's say we have a small dataset composed by two variables: age and height. Let
 
 Let's say we want to study the line that can predict the height from the age and see the correlation between these two variables. 
 
-The first thing we need to do is to import the Dataset class from the right module path, like this:
+The first thing we need to do is to import the `Dataset` class from the right module path, like this:
+```python
 from datamanagers.dataset import Dataset
-
+```
 After that, we want to create two distinct datasets for our two variables. 
 ```python
 age = Dataset([15,20,30,45,60])
