@@ -43,9 +43,9 @@ reg.plot_it()
 ```
 --- 
 
-## API
-1. ##### dataset
-    1. ###### Dataset
+# API
+1. ### dataset
+    1. #### Dataset
         * values
         * maximum
         * minimum
@@ -59,8 +59,8 @@ reg.plot_it()
         * st_dev
         * st_dev_plot
         * variance
-2. ##### linear_regs
-    1. ###### SimpleRegression
+2. ### linear_regs
+    1. #### SimpleRegression
         * x
         * y
         * mean_x
