@@ -166,19 +166,19 @@ Returns the quadratic average of the observations found in the dataset.
 * ##### st_dev()
 Returns the standard deviation of the observatons found in the dataset.
 ```python
-set.st_dev()
+>set.st_dev()
 2.807552838536876
 ```
 
 * ##### st_dev_plot()
 Graphical rappresentation of the deviation of the observations from the arithmetic mean calculated.
 ```python
-set.st_dev_plot()
+>set.st_dev_plot()
 ```
 * ##### variance()
 Returns the variance of the observations found in the dataset.
 ```python
-set.variance()
+>set.variance()
 7.882352941176471
 ```
 ### 1. linear_regs
