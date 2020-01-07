@@ -5,7 +5,12 @@
 
 ##### Note: A Python interpreter is required to run the project.
 
----
+## A first project
+Let's say we have a small dataset composed by two variables: age and height. Let's assume that there are composed like the followings:
+'''
+age = [15,20,30,45,60]
+height = [1.75,1.80,1.82,1.80,1.70]
+'''
 
 ## API
 1. ##### dataset
