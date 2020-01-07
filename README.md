@@ -159,6 +159,7 @@ Returns the harmonic average of the observations found in the dataset. If a valu
 ```
 * ##### quadratic_mean()
 Returns the quadratic average of the observations found in the dataset.
+```
 >set.quadratic_avg()
 >
 >4.8419463487779835
