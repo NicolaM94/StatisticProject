@@ -118,7 +118,7 @@ Average value found in the observations
 Median value found in the observations. If the lenght of the dataset is even, there will be a no-median message promted on the shell.
 ```python
 >set.median()
-Lenght of the set is even - no median value found
+"Lenght of the set is even - no median value found"
 ```
 * ##### trend()
 Trend value of the observations set. This is the most recurrent value in the dataset.
