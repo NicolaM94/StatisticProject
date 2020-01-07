@@ -84,16 +84,14 @@ dataset files like .csv, .xls and other.
 Basic dataset manager. A list or tuple needs to be passed as parameter to create a dataset
 object.
 ```python
-observations = [1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
-
-set  = Dataset (observations)
+>observations = [1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
+>set  = Dataset (observations)
 ```
 
 * ##### set.values
 Values used as the class parameter. These must be passed as parameter during the class object creation.
 ```python
-set.values
-
+>set.values
 [1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
 ```
 
@@ -101,27 +99,27 @@ set.values
 Maximum value found in the observations
 ```python
 >set.maximum()
-
 10
 ```
 * ##### minimum()
 Minimum value found in the observatons
+```python
 >set.minimum()
->
->0
-
+0
+```
 * ##### mean()
 Average value found in the observations
+```python
 >set.avg()
->
->4
+4
+```
 
 * ##### median()
 Median value found in the observations. If the lenght of the dataset is even, there will be a no-median message promted on the shell.
+```python
 >set.median()
->
->Lenght of the set is even - no median value found
-
+Lenght of the set is even - no median value found
+```
 * ##### trend()
 Trend value of the observations set. This is the most recurrent value in the dataset.
 A dictionary is printed to the shell to show results from iteration thru the values but the function returns the value with the most observations in the set.
