@@ -83,22 +83,27 @@ dataset files like .csv, .xls and other.
 #### i. Dataset
 Basic dataset manager. A list or tuple needs to be passed as parameter to create a dataset
 object.
-> observations = [1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
->
->set  = Dataset (observations)
+```python
+observations = [1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
+
+set  = Dataset (observations)
+```
 
 * ##### set.values
 Values used as the class parameter. These must be passed as parameter during the class object creation.
-> set.values
->
->[1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
+```python
+set.values
+
+[1,1,2,3,1,5,7,0,10,4,5,6,4,7,8,3,1,4]
+```
 
 * ##### maximum()
 Maximum value found in the observations
+```python
 >set.maximum()
->
->10
 
+10
+```
 * ##### minimum()
 Minimum value found in the observatons
 >set.minimum()
