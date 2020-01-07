@@ -8,8 +8,13 @@
 ## A first project
 Let's say we have a small dataset composed by two variables: age and height. Let's assume that there are composed like the followings:
 
-age = [15,20,30,45,60]
-height = [1.75,1.80,1.82,1.80,1.70]
+|Age  |Height |
+|:---:|------:|
+|15   |1.75   |
+|20   |1.80   |
+|30   |1.82   |
+|45   |1.80   |
+|60   |1.70   |
 
 Let's say we want to study the line that can predict the height from the age and see the correlation between these two variables. 
 
@@ -33,6 +38,7 @@ reg.slope()
 reg.intercept()
 reg.plot_it()
 ```
+--- 
 
 ## API
 1. ##### dataset
