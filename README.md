@@ -22,7 +22,16 @@ After that, we want to create two distinct datasets for our two variables.
 > height = Dataset([1.75,1.80,1.82,1.80,1.70])
 
 Since this is a two variable regression, we can use the simple linear regression to study our case. We can import the module like this:
-> from 
+> from regressions.linear_regs import SimpleRegression
+>
+> reg = SimpleRegression(age,height)
+
+That's it, we have just created a regression object on which we can call attributes to see many of its properties. For example, we want to know the slope, the intercept and finally plot the slope, we can simply write:
+> reg.slope()
+>
+> reg.intercept()
+>
+>reg.plot_it()
 
 ## API
 1. ##### dataset
