@@ -159,27 +159,28 @@ Returns the harmonic average of the observations found in the dataset. If a valu
 ```
 * ##### quadratic_mean()
 Returns the quadratic average of the observations found in the dataset.
-```
+```python
 >set.quadratic_avg()
->
->4.8419463487779835
-
+4.8419463487779835
+```
 * ##### st_dev()
 Returns the standard deviation of the observatons found in the dataset.
->set.st_dev()
->
->2.807552838536876
+```python
+set.st_dev()
+2.807552838536876
+```
 
 * ##### st_dev_plot()
 Graphical rappresentation of the deviation of the observations from the arithmetic mean calculated.
->set.st_dev_plot()
-
+```python
+set.st_dev_plot()
+```
 * ##### variance()
 Returns the variance of the observations found in the dataset.
->set.variance()
->
->7.882352941176471
-
+```python
+set.variance()
+7.882352941176471
+```
 ### 1. linear_regs
 Module containing the classes to perform simple, multiple and other linear regressions.
 
