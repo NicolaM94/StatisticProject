@@ -14,12 +14,13 @@ height = [1.75,1.80,1.82,1.80,1.70]
 Let's say we want to study the line that can predict the height from the age and see the correlation between these two variables. 
 
 The first thing we need to do is to import the Dataset class from the right module path, like this:
-> from datamanagers.dataset import Dataset
+from datamanagers.dataset import Dataset
 
 After that, we want to create two distinct datasets for our two variables. 
-> age = Dataset([15,20,30,45,60])
->
-> height = Dataset([1.75,1.80,1.82,1.80,1.70])
+```python
+age = Dataset([15,20,30,45,60])
+height = Dataset([1.75,1.80,1.82,1.80,1.70])
+```
 
 Since this is a two variable regression, we can use the simple linear regression to study our case. We can import the module like this:
 > from regressions.linear_regs import SimpleRegression
@@ -176,3 +177,4 @@ Returns the variance of the observations found in the dataset.
 Module containing the classes to perform simple, multiple and other linear regressions.
 
 #### i. 
+
