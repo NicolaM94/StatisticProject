@@ -123,46 +123,40 @@ Median value found in the observations. If the lenght of the dataset is even, th
 * ##### trend()
 Trend value of the observations set. This is the most recurrent value in the dataset.
 A dictionary is printed to the shell to show results from iteration thru the values but the function returns the value with the most observations in the set.
+```python
 >set.trend()
->
->Counted 1 : 4
->
->Counted 2 : 1
->
->Counted 3 : 2
->
->Counted 5 : 2
->
->Counted 7 : 2
->
->Counted 0 : 1
->
->Counted 10 : 1
->
->Counted 4 : 3
->
->Counted 6 : 1
->
->Counted 8 : 1
->
->1
+"Counted 1 : 4
+Counted 2 : 1
+Counted 3 : 2
+Counted 5 : 2
+Counted 7 : 2
+Counted 0 : 1
+Counted 10 : 1
+Counted 4 : 3
+Counted 6 : 1
+Counted 8 : 1"
+1
+```
 
 * ##### trend_plot()
 Returns a plot of the dataset distribution in a new level window.
+```python
 >set.trend_plot()
+```
 
 * ##### geometric_mean()
 Returns the geometric average of the observations found in the dataset.
+```python
 >set.geometric_avg()
->
->1.2681923779934947
+1.2681923779934947
+```
 
 * ##### harmonic_mean()
 Returns the harmonic average of the observations found in the dataset. If a values is a zero, the error message is printed in the shell.
+```python
 >set.armonic_avg()
->
->A 0 was found as a value in the set - division by zero error while evaluating relatives coefficients
-
+"A 0 was found as a value in the set - division by zero error while evaluating relatives coefficients"
+```
 * ##### quadratic_mean()
 Returns the quadratic average of the observations found in the dataset.
 >set.quadratic_avg()
