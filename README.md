@@ -29,9 +29,10 @@ age = Dataset([15,20,30,45,60])
 height = Dataset([1.75,1.80,1.82,1.80,1.70])
 ```
 
-Since this is a two variable regression, we can use the simple linear regression to study our case. We can import the module like this:
+Since this is a two variable regression, we can use the simple linear regression to study our case. We can import the module and assign the regression object to a variable called `reg`:
 ```python
 from regressions.linear_regs import SimpleRegression
+
 reg = SimpleRegression(age,height)
 ```
 That's it, we have just created a regression object on which we can call attributes to see many of its properties. For example, we want to know the slope, the intercept and finally plot the slope, we can simply write:
