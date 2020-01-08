@@ -197,11 +197,23 @@ Class to create a regression object. Regressions created by this are simple line
 > reg = SimpleRegression(x,y)
 "SUCCES - Regression correctly created
 ```
-A regression created simply by passing two lists of values to the regression will result in an error similiar to the case below:
+__NOTE: A regression created simply by passing two lists of values to the regression will result in a non working regression: user MUST use two dataset objects because regressions are built on datasets methods, hence passing a list or a tuple as parameter will cause any attribute of the regression class to crash and return an error.__
+
+* ##### mean_x()
+Return the mean value of the x set
 ```python
-> reg = SimpleRegression([1,2,3,4,5],[1,4,9,16,25])
-"ERROR - Two dataset object needs to be collected. See help for more informations.
+> reg.mean_x()
+3
 ```
-User is forced to use two dataset objects because regressions are built on datasets methods, hence passing a list or a tuple as parameter will cause any attribute of the regression class to crash and return an error.
-
-
+* ##### mean_y()
+Return the mean value of the y set
+```python
+> reg.mean_y()
+11
+```
+* ## mean_diff_x()
+Returns the list of differences between each observation in x set and the related mean. Mainly used in internal calculations.
+```python
+> reg.mean_diff_x()
+[-2,-1,0,1,2]
+```
