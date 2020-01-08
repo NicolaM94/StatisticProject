@@ -211,9 +211,16 @@ Return the mean value of the y set
 > reg.mean_y()
 11
 ```
-* ## mean_diff_x()
+* ##### mean_diff_x()
 Returns the list of differences between each observation in x set and the related mean. Mainly used in internal calculations.
 ```python
 > reg.mean_diff_x()
 [-2,-1,0,1,2]
 ```
+* ##### mean_diff_y()
+Returns the list of differences between each observation in y set and the related mean. Mainly used in internal calculations.
+```python
+> reg.mean_diff_y()
+[-10,-7,-2,5,14]
+```
+* ##### 
