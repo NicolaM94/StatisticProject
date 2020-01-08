@@ -70,9 +70,9 @@ Function returning the pearson coefficient value.''')
         return r
 
     def plot_it(self):
-        estimates = [(self.calculate(x)) for x in self.x]
-        line = plt.plot(self.x,estimates)
-        scatter = plt.scatter(self.x,self.y,c="red")
+        estimates = [(self.calculate(x)) for x in self.x.values]
+        line = plt.plot(self.x.values,estimates)
+        scatter = plt.scatter(self.x.values,self.y.values,c="red")
         plt.title("Regression line plot")
         plt.ylabel("Regression results")
         plt.xlabel("Dataset values")
