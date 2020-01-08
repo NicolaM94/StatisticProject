@@ -81,11 +81,11 @@ reg.plot_it()
             
 ---
 
-### 1. datamanagers.datamanager
+### 1.i datamanagers.datamanager
 This module contains classes and functions to perform basics operations over a dataset and manage
 dataset files like .csv, .xls and other.
 
-#### i. Dataset
+#### a. Dataset
 Basic dataset manager. A list or tuple needs to be passed as parameter to create a dataset
 object.
 ```python
@@ -186,8 +186,22 @@ Returns the variance of the observations found in the dataset.
 >set.variance()
 7.882352941176471
 ```
-### 1. linear_regs
+### 2.i linear_regs
 Module containing the classes to perform simple, multiple and other linear regressions.
 
-#### i. 
+#### a. SimpleRegression
+Class to create a regression object. Regressions created by this are simple linear regressions, accepting only 2 variables defined as x (the regretting variable) and y (the variable to regret). Note that this class, as the others, requires a dataset object created by a class from the datamanagers module to work properly, as the example below:
+```python
+> x = Dataset([1,2,3,4,5])
+> y = Dataset([1,4,9,16,25])
+> reg = SimpleRegression(x,y)
+"SUCCES - Regression correctly created
+```
+A regression created simply by passing two lists of values to the regression will result in an error similiar to the case below:
+```python
+> reg = SimpleRegression([1,2,3,4,5],[1,4,9,16,25])
+"ERROR - Two dataset object needs to be collected. See help for more informations.
+```
+User is forced to use two dataset objects because regressions are built on datasets methods, hence passing a list or a tuple as parameter will cause any attribute of the regression class to crash and return an error.
+
 
