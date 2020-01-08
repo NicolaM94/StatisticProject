@@ -45,39 +45,43 @@ reg.plot_it()
 --- 
 
 # API
-1. ### dataset
-    1. #### Dataset
-        * values
-        * maximum
-        * minimum
-        * mean
-        * median
-        * trend
-        * trend_plot
-        * geometric_mean
-        * harmonic_mean
-        * quadratic_mean
-        * st_dev
-        * st_dev_plot
-        * variance
-2. ### linear_regs
-    1. #### SimpleRegression
-        * x
-        * y
-        * mean_x
-        * mean_y
-        * mean_diff_x
-        * mean_diff_y
-        * covariance
-        * slope
-        * intercept
-        * calculate
-        * mse
-        * rmse
-        * plot_it
+1. ### [directory] datamanagers
+    1. #### datamanager
+        1. ##### Dataset
+            * values
+            * maximum
+            * minimum
+            * mean
+            * median
+            * trend
+            * trend_plot
+            * geometric_mean
+            * harmonic_mean
+            * quadratic_mean
+            * st_dev
+            * st_dev_plot
+            * variance
+2. ### [directory] regressions
+    1. #### linear_regs
+        1. ##### SimpleRegression
+            * x
+            * y
+            * mean_x
+            * mean_y
+            * mean_diff_x
+            * mean_diff_y
+            * covariance
+            * slope
+            * intercept
+            * calculate
+            * mse
+            * rmse
+            * pearson_corr
+            * plot_it
+            
 ---
 
-### 1. dataset.py
+### 1. datamanagers.datamanager
 This module contains classes and functions to perform basics operations over a dataset and manage
 dataset files like .csv, .xls and other.
 
