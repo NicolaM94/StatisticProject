@@ -4,13 +4,14 @@
 ###### The project contains multiple modules that will be explained along this guide.
 
 ##### Note: A Python interpreter is required to run the project.
+
 ---
 
 ## A first project
 Let's say we have a small dataset composed by two variables: age and height. Let's assume that there are composed like the followings:
 
 |Age  |Height |
-|:---:|------:|
+|:---:|:------:|
 |15   |1.75   |
 |20   |1.80   |
 |30   |1.82   |
