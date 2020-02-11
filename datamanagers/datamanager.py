@@ -79,7 +79,9 @@ class Dataset:
     def variance(self):
         return self.st_dev() ** 2
 
-
+    def distribution_type(self):
+        if self.mean == self.median:
+            print("Normal distribution over the mean and median values of",self.mean)
 
 if __name__ != "__main__":
     print(('''-----------------------------------------------------------------------------------------
