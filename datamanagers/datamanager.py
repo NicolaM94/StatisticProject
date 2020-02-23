@@ -15,10 +15,11 @@ class Dataset:
         return sum(self.values) / len(self.values)
 
     def median(self):
-        if len(self.values) % 2 == 1:
-            return self.values[round(len(self.values) / 2) + 1]
+        if len(self.values)%2 == 1:
+            return self.values[round(len(self.values)/2)]
         else:
-            print("Lenght of the set is even - no median value found")
+            half_lenght = int(len(self.values)/2)
+            return (self.values[half_lenght]+self.values[half_lenght+1])/2
 
     def trend(self):
         results = {}
