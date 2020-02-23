@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 
+
+
+
 class Dataset:
 
     def __init__(self, values):
@@ -45,6 +48,28 @@ class Dataset:
         plt.title("Distribution of the set")
         plt.show()
 
+    def rel_freq (self):
+        relatives = {}
+        for n in self.values:
+            if n not in relatives:
+                relatives[n] = self.values.count(n)/len(self.values)
+            else:
+                continue
+        print("Values   |Absolute Frequency |Relative Frequency")
+        for n in relatives:
+            print(n,"   ",self.values.count(n),"    ",relatives[n])
+
+    def cum_dis_func (self):
+        result = 0
+        chart = {}
+        for n in self.values:
+            if n not in chart:
+                result += self.values.count(n)/len(self.values)
+                chart[n] = result
+            else:
+                continue
+        return chart
+
     def geometric_mean(self):
         result = 1
         for n in self.values:
@@ -83,6 +108,11 @@ class Dataset:
     def distribution_type(self):
         if self.mean == self.median:
             print("Normal distribution over the mean and median values of",self.mean)
+
+
+
+
+
 
 if __name__ != "__main__":
     print(('''-----------------------------------------------------------------------------------------
